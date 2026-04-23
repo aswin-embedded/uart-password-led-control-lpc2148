@@ -1,18 +1,18 @@
 # 🔐 UART Password Protected LED Control System (LPC2148)
 
 ## 📌 Project Overview
-This project implements a **UART-based password-protected system** using the LPC2148 microcontroller.  
+This project implements a **UART-based password-protected embedded system** using the LPC2148 microcontroller.
 
-After successful authentication, the user can control an LED using serial commands through a terminal interface.
+After successful authentication, the user can control an LED through serial commands via a terminal interface.
 
 ---
 
 ## 🚀 Features
 - UART Communication (Transmit & Receive)
 - Password authentication with masked input (`*`)
-- 3-attempt security lock mechanism
-- Command-based system using serial terminal
-- GPIO control for LED operation
+- 3-attempt security lock system
+- Command-based control system
+- GPIO interfacing for LED control
 - Logout functionality
 
 ---
@@ -27,42 +27,37 @@ After successful authentication, the user can control an LED using serial comman
 ## 🛠️ Tools & Technologies Used
 - Embedded C
 - LPC2148 Microcontroller
-- Proteus Simulation
+- ISIS professional
 - UART Protocol
-
----
 
 
 ## 🎥 Demo Video
-Watch the working demo here:  
-👉 https://drive.google.com/file/d/1lX05-ZX1k4kVRBKpg2hh1WkZr2BFr0zb/view?usp=drive_link
+👉 Watch here:  
+https://drive.google.com/file/d/1lX05-ZX1k4kVRBKpg2hh1WkZr2BFr0zb/view?usp=drive_link
 
 ---
 
-## 📂 Project Files
-- `main.c` → Source code  
-- `project.dsn` → Proteus schematic file  
-- `circuit.png` → Circuit screenshot
 
----
 
-## 🔐 System Working
+## 🔐 Working Principle
 1. User enters password via UART terminal  
 2. Input is masked using `*`  
-3. If correct:
-   - Access granted to command system  
-4. If wrong:
-   - 3 attempts allowed  
-   - System locks after 3 failures  
-5. Commands control LED using GPIO  
+3. If password is correct:
+   - Access is granted to command system  
+4. If password is wrong:
+   - Only 3 attempts allowed  
+   - System locks after 3 failed attempts  
+5. User can control LED using commands  
+6. `EXIT` command logs out user  
+
 
 ---
 
-## 🙌 Author
+## 👨‍💻 Author
 **Aswin**  
 Aspiring Embedded Systems Engineer  
 
 ---
 
 ## 🔗 Connect with Me
-(https://www.linkedin.com/in/aswinsanthosh2509/)
+LinkedIn: https://www.linkedin.com/in/aswinsanthosh2509/
